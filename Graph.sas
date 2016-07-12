@@ -131,7 +131,7 @@ datalines;
 ;
 run;
 
-symbol value=dot interpol=sm; /*sm is smooth*/
+symbol value=dot interpol=sm; /*sm is smooth, or we use join to connect dots.*/
 proc gplot data=stocks;
 	plot price*date/ vaxis=25 to 60 by 5;
 run;
